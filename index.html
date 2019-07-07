@@ -9,145 +9,239 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/slick.css" />
+		<link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+		<style type="text/css">
+			.slider {
+				width: 90%;
+				margin: 100px auto;
+			}
+
+			.slick-slide {
+				margin: 0px 20px;
+			}
+
+			.slick-slide img {
+				width: 100%;
+			}
+
+			.slick-prev:before,
+			.slick-next:before {
+				color: #2F6C43;
+			}
+
+
+			.slick-slide {
+				transition: all ease-in-out .3s;
+				opacity: .2;
+			}
+
+			.slick-active {
+				opacity: .5;
+			}
+
+			.slick-current {
+				opacity: 1;
+			}
+		</style>
 	</head>
 	<body>
-
 		<!-- Header -->
-			<header id="header">
-				<a href="index.html" class="logo"><strong>RENOV</strong> CONSULTORIA</a>
-				<nav>
-					<a href="#menu">Menu</a>
-				</nav>
-			</header>
+		<header id="header">
+			<a href="index.html" class="logo"><strong>RENOV</strong> CONSULTORIA</a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
 
 		<!-- Nav -->
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#one">Serviços</a></li>
-					<li><a href="#contact">Contato</a></li>
-				</ul>
-			</nav>
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#one">Serviços</a></li>
+				<li><a href="#cliente">Clientes</a></li>
+				<li><a href="#contact">Contato</a></li>
+			</ul>
+		</nav>
 
 		<!-- Banner -->
-			<section id="banner">
-				<div class="inner img-logo">
-					<img src="images/logo.png"><br><br>
-					<ul class="actions">
-						<li><a href="#one" class="button alt scrolly big">Continue</a></li>
-					</ul>
-				</div>
+		<section id="banner">
+			<div class="inner img-logo">
+				<img src="images/logo.png"><br><br>
+				<ul class="actions">
+					<li><a href="#one" class="button alt scrolly big">Continue</a></li>
+				</ul>
+			</div>
 
-				<div class="inner img-logo-min">
-					<img src="images/logo-min.png"><br><br>
-				</div>
-			</section>
+			<div class="inner img-logo-min">
+				<img src="images/logo-min.png"><br><br>
+			</div>
+		</section>
 
 		<!-- One -->
-			<article id="one" class="post style1">
-				<div class="image">
-					<img src="images/sistema-gestao.jpg" alt="" data-position="75% center" />
-				</div>
-				<div class="content">
-					<div class="inner">
-						<header>
-							<h2>LICENCIAMENTOS AMBIENTAIS</h2>
+		<article id="one" class="post style1">
+			<div class="image">
+				<img src="images/sistema-gestao.jpg" alt="" data-position="75% center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h2>LICENCIAMENTOS AMBIENTAIS</h2>
 <!--							<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
-						</header>
-						<p>Serviços técnicos visando à obtenção de Licenças Ambientais para todos os tipos de empreendimentos. Entrada e acompanhamento de processos junto aos órgãos ambientais:
-							<br><br>Licenças de Instalação (LI)
-							<br>Licença Prévia (LP)
-							<br>Licença de Funcionamento e Operação (LF / LO)
-							<br>Licença Ambiental Simplificada (LAS)
-							<br>Licença Ambiental para Transporte de Cargas Perigosas</p>
-						<!--<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
-						</ul>-->
-					</div>
-					<div class="postnav">
-						<!--<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>-->
-						<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
-					</div>
+					</header>
+					<p>Serviços técnicos visando à obtenção de Licenças Ambientais para todos os tipos de empreendimentos. Entrada e acompanhamento de processos junto aos órgãos ambientais:
+						<br><br>Licenças de Instalação (LI)
+						<br>Licença Prévia (LP)
+						<br>Licença de Funcionamento e Operação (LF / LO)
+						<br>Licença Ambiental Simplificada (LAS)
+						<br>Licença Ambiental para Transporte de Cargas Perigosas</p>
+					<!--<ul class="actions">
+						<li><a href="generic.html" class="button alt">Read More</a></li>
+					</ul>-->
 				</div>
-			</article>
+				<div class="postnav">
+					<!--<a href="#" class="prev disabled"><span class="icon fa-chevron-up"></span></a>-->
+					<a href="#two" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
+				</div>
+			</div>
+		</article>
 
 		<!-- Two -->
-			<article id="two" class="post invert style1 alt">
-				<div class="image">
-					<img src="images/licenciamento-ambiental.jpg" alt="" data-position="10% center" />
+		<article id="two" class="post invert style1 alt">
+			<div class="image">
+				<img src="images/licenciamento-ambiental.jpg" alt="" data-position="10% center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h2>GESTÃO AMBIENTAL</h2>
+						<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
+					</header>
+					<p>Gerenciamento de áreas contaminadas
+						<br>Perícia ambiental
+						<br>Gerenciamento de resíduos industriais
+						<br>Projetos de educação ambiental
+						<br>Implantação de coleta seletiva
+						<br>Auditoria ambiental
+						<br>Estudo de Impacto Ambiental e de Vizinhança
+						<br>Plano Básico e de Controle Ambiental</p>
+						<!--<li><a href="generic.html" class="button alt">Read More</a></li>
+					</ul>-->
 				</div>
-				<div class="content">
-					<div class="inner">
-						<header>
-							<h2>GESTÃO AMBIENTAL</h2>
-							<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
-						</header>
-						<p>Gerenciamento de áreas contaminadas
-							<br>Perícia ambiental
-							<br>Gerenciamento de resíduos industriais
-							<br>Projetos de educação ambiental
-							<br>Implantação de coleta seletiva
-							<br>Auditoria ambiental
-							<br>Estudo de Impacto Ambiental e de Vizinhança
-							<br>Plano Básico e de Controle Ambiental</p>
-							<!--<li><a href="generic.html" class="button alt">Read More</a></li>
-						</ul>-->
-					</div>
-					<div class="postnav">
-						<a href="#one" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-						<a href="#three" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
-					</div>
+				<div class="postnav">
+					<a href="#one" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+					<a href="#three" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
 				</div>
-			</article>
+			</div>
+		</article>
 
 		<!-- Three -->
-			<article id="three" class="post style2">
-				<div class="image">
-					<img src="images/gestao-ambiental.jpg" alt="" data-position="80% center" />
+		<article id="three" class="post style2">
+			<div class="image">
+				<img src="images/gestao-ambiental.jpg" alt="" data-position="80% center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h2>IMPLANTAÇÃO DE SISTEMAS DE GESTÃO</h2>
+						<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
+					</header>
+					<p>NBR ISO 9001
+						<br>NBR ISO 14001
+						<br>SASSMAQ</p>
+					<!--<ul class="actions">
+						<li><a href="generic.html" class="button alt">Read More</a></li>
+					</ul>-->
 				</div>
-				<div class="content">
-					<div class="inner">
-						<header>
-							<h2>IMPLANTAÇÃO DE SISTEMAS DE GESTÃO</h2>
-							<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
-						</header>
-						<p>NBR ISO 9001
-							<br>NBR ISO 14001
-							<br>SASSMAQ</p>
-						<!--<ul class="actions">
-							<li><a href="generic.html" class="button alt">Read More</a></li>
-						</ul>-->
-					</div>
-					<div class="postnav">
-						<a href="#two" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-						<!--<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>-->
-					</div>
+				<div class="postnav">
+					<a href="#two" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+					<!--<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>-->
 				</div>
-			</article>
+			</div>
+		</article>
+
+		<section id="cliente" style="text-align: center; margin-top: 30px;">
+			<h2 style="color: #2F6C43; font-size: 2.35em;">CLIENTES</h2>
+			<div class="clientes slider">
+				<div>
+					<img src="images/cliente/CREME.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/FMR.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/GCM.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/IGUAÇU.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/IN.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/LK.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/RC.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/RECICLAR.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/SR.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/TESCAN.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/TRANSAC.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/TRANSEXPLO.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/ULTRAGAZ.jpg">
+				</div>
+				<div>
+					<img src="images/cliente/ZEMA.jpg">
+				</div>
+			</div>
+		</section>
 
 		<section id="contact" style="background: #1c1c1c;">
 			<iframe width="100%" height="400" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:EjZBdi4gQyAtIMOBZ3VhIEJyYW5jYSwgR29pw6JuaWEgLSBHTywgNzQ3MjMtMDYwLCBCcmF6aWwiLiosChQKEgl5I__jt_FekxHNP1AYeyRC-xIUChIJOY3MjLjxXpMRDQsYZRXpJp4&key=AIzaSyBMdht6G6du7hkI01EaFR2--clHEzjEwAg" allowfullscreen></iframe>
 		</section>
 
 		<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a target="_blank" href="https://www.facebook.com/Renov-Consultoria-2326500300999611/?__tn__=%2Cd%2CP-R&eid=ARBWxc8F1yfvOLFuwtxdN9L68_dnQeuo821xjWGqsfqIlY4AT7mCNNCjemnfDo-uuqU6bmDBjCfUAt4R" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/renovconsultoria/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562991283131" class="icon fa-whatsapp"><span class="label">Whatsapp</span></a></li>
-					<li><a target="_blank" href="tel:+5562991283131" class="icon fa-phone"><span class="label">Telefone</span></a></li>
-				</ul>
-				<!--<div class="copyright">
-					&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-				</div>-->
-			</footer>
+		<footer id="footer">
+			<ul class="icons">
+				<li><a target="_blank" href="https://www.facebook.com/Renov-Consultoria-2326500300999611/?__tn__=%2Cd%2CP-R&eid=ARBWxc8F1yfvOLFuwtxdN9L68_dnQeuo821xjWGqsfqIlY4AT7mCNNCjemnfDo-uuqU6bmDBjCfUAt4R" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a target="_blank" href="https://www.instagram.com/renovconsultoria/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562991283131" class="icon fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+				<li><a target="_blank" href="tel:+5562991283131" class="icon fa-phone"><span class="label">Telefone</span></a></li>
+			</ul>
+			<!--<div class="copyright">
+				&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+			</div>-->
+		</footer>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/slick.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
+		<script type="text/javascript">
+            $(document).on('ready', function() {
+                $(".clientes").slick({
+                    slidesToShow: 6,
+                    autoplay: true,
+                    autoplaySpeed: 2000
+                });
+            });
+		</script>
 	</body>
 </html>
