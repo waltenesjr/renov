@@ -23,7 +23,7 @@
 			}
 
 			.slick-slide img {
-				width: 70%;
+				width: 100%;
 			}
 
 			.slick-prev:before,
@@ -61,6 +61,7 @@
 			<ul class="links">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="#one">Serviços</a></li>
+				<li><a href="#institucional">Instituicional</a></li>
 				<li><a href="#cliente">Clientes</a></li>
 				<li><a href="#contact">Contato</a></li>
 			</ul>
@@ -157,10 +158,47 @@
 				</div>
 				<div class="postnav">
 					<a href="#two" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
-					<!--<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>-->
+					<a href="#four" class="scrolly next"><span class="icon fa-chevron-down"></span></a>
 				</div>
 			</div>
 		</article>
+
+		<!-- Four -->
+		<article id="four" class="post invert style1 alt">
+			<div class="image">
+				<img src="images/licenciamento-ambiental.jpg" alt="" data-position="10% center" />
+			</div>
+			<div class="content">
+				<div class="inner">
+					<header>
+						<h2>GESTÃO DE PESSOAS</h2>
+						<!--<p class="info">3 days ago by <a href="#">Jane Doe</a></p>-->
+					</header>
+						<p>Avaliação de Perfil Comportamental CIS Assessment
+						<br>Palestras sobre Liderança e Inteligência Emocional
+						<br>Palestrante oficial do Best Seller O Poder da Ação do Dr. Paulo Vieira
+						</p>
+					<!--<li><a href="generic.html" class="button alt">Read More</a></li>
+                </ul>-->
+				</div>
+				<div class="postnav">
+					<a href="#three" class="scrolly prev"><span class="icon fa-chevron-up"></span></a>
+					<!--<a href="#three" class="scrolly next"><span class="icon fa-chevron-down"></span></a>-->
+				</div>
+			</div>
+		</article>
+
+		<section id="institucional" style="background: #2F6C43;">
+			<br>
+			<h2 style="font-size: 2.35em; color: #ffffff; text-align: center;">Institucional</h2>
+			<p style="color: white; padding: 0px 50px 50px 50px;" align="justify">
+				A boa relação entre o meio ambiente e o crescimento empresarial, depende da criação de uma consciência voltada ao desenvolvimento sustentável.
+				Orientar as empresas quanto ao cumprimento de requisitos estabelecidos, sejam de clientes, legais, parceiros e internos, trazendo uma melhor
+				reputação no mercado e facilitando as parcerias comerciais do negócio é o objetivo da Renov Consultoria Ambiental e Empresarial.
+				Situada em Aparecida de Goiânia desde 2014, possui amplo portfólio de serviços. Com visão integrada de sistemas de gestão a Renov Consultoria
+				Ambiental e Empresarial possui conhecimento para o avanço econômico de seus clientes e cumprimento de legislação, oferecendo soluções com o melhor custo benefício.
+			</p>
+		</section>
 
 		<section id="cliente" style="text-align: center; margin-top: 30px;">
 			<h2 style="color: #2F6C43; font-size: 2.35em;">CLIENTES</h2>
@@ -222,9 +260,9 @@
 				<li><a target="_blank" href="http://api.whatsapp.com/send?1=pt_BR&phone=5562991283131" class="icon fa-whatsapp"><span class="label">Whatsapp</span></a></li>
 				<li><a target="_blank" href="tel:+5562991283131" class="icon fa-phone"><span class="label">Telefone</span></a></li>
 			</ul>
-			<!--<div class="copyright">
-				&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
-			</div>-->
+			<div class="copyright">
+				Desenvolvido por <a href="https://sanaweb.com.br">SANAWEB</a>.
+			</div>
 		</footer>
 
 		<!-- Scripts -->
@@ -240,7 +278,20 @@
                 $(".clientes").slick({
                     slidesToShow: 6,
                     autoplay: true,
-                    autoplaySpeed: 1000
+                    autoplaySpeed: 1000,
+					responsive: [{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 5
+						}
+
+					}, {
+						breakpoint: 600,
+						settings: {
+							slidesToShow: 3
+						}
+
+					}]
                 });
             });
 		</script>
